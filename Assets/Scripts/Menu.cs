@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void BotonStart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void BotonEntrenamiento()

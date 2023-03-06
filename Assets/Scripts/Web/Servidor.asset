@@ -33,8 +33,10 @@ MonoBehaviour:
     - jugador
     - nivel
     - puntaje
-  ocupado: 0
+    - ia
+  user: Rigoberto
+  ocupado: 1
   respuesta:
-    codigo: 404
-    mensaje: Error
-    respuesta: 
+    codigo: 205
+    mensaje: Inicio de sesion correcto!!
+    respuesta: '{"id":21,"usuario":"Rigoberto","pass":"12345","jugador":1,"nivel":2}'

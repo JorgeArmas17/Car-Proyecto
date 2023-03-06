@@ -39,7 +39,7 @@ public class Registro : MonoBehaviour
                 print(servidor.respuesta.mensaje);
                 break;
             case 201: //Inicio de Sesión Correcto
-                SceneManager.LoadScene("Login");
+                SceneManager.LoadScene(2);
                 usuario = JsonUtility.FromJson<DBUsuario>(servidor.respuesta.respuesta);
                 break;
             case 402: //Faltan datos para ejecutar la accion solicitada 

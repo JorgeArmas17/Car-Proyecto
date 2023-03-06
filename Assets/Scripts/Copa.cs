@@ -105,7 +105,7 @@ public class Copa : MonoBehaviour
                     vuelta += 1;
                     break;
             }
-            if(vuelta == 3)
+            if(vuelta == 2)
             {
                 Time.timeScale = 0f;
                 puntaje.SetActive(true);

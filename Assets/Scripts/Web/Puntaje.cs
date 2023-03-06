@@ -11,6 +11,8 @@ public class Puntaje : MonoBehaviour
 
     public DBUsuario usuario;
     public Text impPuntos;
+    public Text impPuntosIA;
+
 
     public void RegistroPuntaje()
     {
@@ -19,12 +21,13 @@ public class Puntaje : MonoBehaviour
 
     IEnumerator Registrar()
     {
-        string[] datos = new string[4];
+        string[] datos = new string[5];
         print(servidor.user);
         datos[0] = servidor.user;
         datos[1] = "0";
         datos[2] = "0";
         datos[3] = impPuntos.text;
+        datos[4] = impPuntosIA.text;
         StartCoroutine(servidor.ConsumirServicio("Puntaje", datos, PosCargar));
         yield return new WaitForSeconds(0.5f);
         yield return new WaitUntil(() => !servidor.ocupado);
